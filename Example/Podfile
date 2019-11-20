@@ -1,8 +1,10 @@
 use_frameworks!
+inhibit_all_warnings!
+platform :ios, '10.0'
 
 target 'HHProgressHUD_Example' do
   pod 'HHProgressHUD', :path => '../'
-
+  pod 'SwiftEntryKit', '~> 1.2.3'
   target 'HHProgressHUD_Tests' do
     inherit! :search_paths
 
