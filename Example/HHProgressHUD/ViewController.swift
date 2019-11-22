@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  HHProgressHUD
 //
-//  Created by acct<blob>=<NULL> on 11/20/2019.
-//  Copyright (c) 2019 acct<blob>=<NULL>. All rights reserved.
+//  Created by ios on 2019/11/22.
+//  Copyright © 2019 iOS. All rights reserved.
 //
 
 import UIKit
@@ -12,13 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
 

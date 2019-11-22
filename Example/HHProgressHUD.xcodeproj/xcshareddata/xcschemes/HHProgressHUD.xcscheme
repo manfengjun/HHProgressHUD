@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "1110"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "HHProgressHUD_Example.app"
-               BlueprintName = "HHProgressHUD_Example"
-               ReferencedContainer = "container:HHProgressHUD.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HHProgressHUD_Tests.xctest"
-               BlueprintName = "HHProgressHUD_Tests"
+               BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
+               BuildableName = "HHProgressHUD.app"
+               BlueprintName = "HHProgressHUD"
                ReferencedContainer = "container:HHProgressHUD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,37 +26,34 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HHProgressHUD_Tests.xctest"
-               BlueprintName = "HHProgressHUD_Tests"
+               BlueprintIdentifier = "81D9A9F12387D6C70085FCE3"
+               BuildableName = "HHProgressHUDTests.xctest"
+               BlueprintName = "HHProgressHUDTests"
+               ReferencedContainer = "container:HHProgressHUD.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "81D9A9FC2387D6C70085FCE3"
+               BuildableName = "HHProgressHUDUITests.xctest"
+               BlueprintName = "HHProgressHUDUITests"
                ReferencedContainer = "container:HHProgressHUD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HHProgressHUD_Example.app"
-            BlueprintName = "HHProgressHUD_Example"
-            ReferencedContainer = "container:HHProgressHUD.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -81,14 +64,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HHProgressHUD_Example.app"
-            BlueprintName = "HHProgressHUD_Example"
+            BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
+            BuildableName = "HHProgressHUD.app"
+            BlueprintName = "HHProgressHUD"
             ReferencedContainer = "container:HHProgressHUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -100,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HHProgressHUD_Example.app"
-            BlueprintName = "HHProgressHUD_Example"
+            BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
+            BuildableName = "HHProgressHUD.app"
+            BlueprintName = "HHProgressHUD"
             ReferencedContainer = "container:HHProgressHUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
