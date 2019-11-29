@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
-               BuildableName = "HHProgressHUD.app"
-               BlueprintName = "HHProgressHUD"
+               BlueprintIdentifier = "817F10E12390B00900A7E45C"
+               BuildableName = "HHProgressHUD_Example.app"
+               BlueprintName = "HHProgressHUD_Example"
                ReferencedContainer = "container:HHProgressHUD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81D9A9F12387D6C70085FCE3"
+               BlueprintIdentifier = "817F10F72390B00A00A7E45C"
                BuildableName = "HHProgressHUDTests.xctest"
                BlueprintName = "HHProgressHUDTests"
                ReferencedContainer = "container:HHProgressHUD.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81D9A9FC2387D6C70085FCE3"
+               BlueprintIdentifier = "817F11022390B00B00A7E45C"
                BuildableName = "HHProgressHUDUITests.xctest"
                BlueprintName = "HHProgressHUDUITests"
                ReferencedContainer = "container:HHProgressHUD.xcodeproj">
@@ -64,9 +64,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
-            BuildableName = "HHProgressHUD.app"
-            BlueprintName = "HHProgressHUD"
+            BlueprintIdentifier = "817F10E12390B00900A7E45C"
+            BuildableName = "HHProgressHUD_Example.app"
+            BlueprintName = "HHProgressHUD_Example"
             ReferencedContainer = "container:HHProgressHUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81D9A9DB2387D6C30085FCE3"
-            BuildableName = "HHProgressHUD.app"
-            BlueprintName = "HHProgressHUD"
+            BlueprintIdentifier = "817F10E12390B00900A7E45C"
+            BuildableName = "HHProgressHUD_Example.app"
+            BlueprintName = "HHProgressHUD_Example"
             ReferencedContainer = "container:HHProgressHUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

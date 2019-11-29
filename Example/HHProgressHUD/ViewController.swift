@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  HHProgressHUD
 //
-//  Created by ios on 2019/11/22.
+//  Created by ios on 2019/11/29.
 //  Copyright © 2019 iOS. All rights reserved.
 //
 
@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func click(_ sender: Any) {
+        print("弹出")
+        HHProgressHUD.setStyle(styles: ToastStyles(font: UIFont.systemFont(ofSize: 18), color: .blue))
+        HHProgressHUD.toast("请求失败，请稍后重试!")
+    }
+    
 }
 

@@ -3,80 +3,96 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AB2FFF5A3E45B231668074A /* Pods_HHProgressHUDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A8FFC4DB5B8F3DCBFE2E92 /* Pods_HHProgressHUDTests.framework */; };
-		81D9A9E02387D6C30085FCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9A9DF2387D6C30085FCE3 /* AppDelegate.swift */; };
-		81D9A9E22387D6C30085FCE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9A9E12387D6C30085FCE3 /* SceneDelegate.swift */; };
-		81D9A9E42387D6C30085FCE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9A9E32387D6C30085FCE3 /* ViewController.swift */; };
-		81D9A9E72387D6C30085FCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D9A9E52387D6C30085FCE3 /* Main.storyboard */; };
-		81D9A9E92387D6C70085FCE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D9A9E82387D6C70085FCE3 /* Assets.xcassets */; };
-		81D9A9EC2387D6C70085FCE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D9A9EA2387D6C70085FCE3 /* LaunchScreen.storyboard */; };
-		81D9A9F72387D6C70085FCE3 /* HHProgressHUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9A9F62387D6C70085FCE3 /* HHProgressHUDTests.swift */; };
-		81D9AA022387D6C70085FCE3 /* HHProgressHUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9AA012387D6C70085FCE3 /* HHProgressHUDUITests.swift */; };
-		DE40E9F19481BB7441B5D7AC /* Pods_HHProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF75B7EBBAEE75106AECE985 /* Pods_HHProgressHUD.framework */; };
+		714C34C864355BB496BD0652 /* Pods_HHProgressHUDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEF07A9DF15A0E44351877D /* Pods_HHProgressHUDTests.framework */; };
+		7AEACFD8B3B893080A053D36 /* Pods_HHProgressHUD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4B1B2163F212781308E4E9 /* Pods_HHProgressHUD_Example.framework */; };
+		8145F8542390B1E40084C363 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8512390B1E40084C363 /* README.md */; };
+		8145F8552390B1E40084C363 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8522390B1E40084C363 /* LICENSE */; };
+		8145F8562390B1E40084C363 /* HHProgressHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8532390B1E40084C363 /* HHProgressHUD.podspec */; };
+		8145F8582390B4520084C363 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145F8572390B4520084C363 /* Toast.swift */; };
+		8145F8992390C25F0084C363 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145F8982390C25F0084C363 /* UIView+Ex.swift */; };
+		8145F89B2390C2B90084C363 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145F89A2390C2B90084C363 /* ToastView.swift */; };
+		8145F91C2390F50B0084C363 /* ToastAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145F91B2390F50B0084C363 /* ToastAttributes.swift */; };
+		8145F91F2390FE690084C363 /* HHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145F91E2390FE690084C363 /* HHProgressHUD.swift */; };
+		817F10E62390B00900A7E45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E52390B00900A7E45C /* AppDelegate.swift */; };
+		817F10E82390B00900A7E45C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E72390B00900A7E45C /* SceneDelegate.swift */; };
+		817F10EA2390B00900A7E45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E92390B00900A7E45C /* ViewController.swift */; };
+		817F10ED2390B00900A7E45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817F10EB2390B00900A7E45C /* Main.storyboard */; };
+		817F10EF2390B00A00A7E45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817F10EE2390B00A00A7E45C /* Assets.xcassets */; };
+		817F10F22390B00A00A7E45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817F10F02390B00A00A7E45C /* LaunchScreen.storyboard */; };
+		817F10FD2390B00A00A7E45C /* HHProgressHUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10FC2390B00A00A7E45C /* HHProgressHUDTests.swift */; };
+		817F11082390B00B00A7E45C /* HHProgressHUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F11072390B00B00A7E45C /* HHProgressHUDUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		81D9A9F32387D6C70085FCE3 /* PBXContainerItemProxy */ = {
+		817F10F92390B00A00A7E45C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 81D9A9D42387D6C30085FCE3 /* Project object */;
+			containerPortal = 817F10DA2390B00900A7E45C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 81D9A9DB2387D6C30085FCE3;
+			remoteGlobalIDString = 817F10E12390B00900A7E45C;
 			remoteInfo = HHProgressHUD;
 		};
-		81D9A9FE2387D6C70085FCE3 /* PBXContainerItemProxy */ = {
+		817F11042390B00B00A7E45C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 81D9A9D42387D6C30085FCE3 /* Project object */;
+			containerPortal = 817F10DA2390B00900A7E45C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 81D9A9DB2387D6C30085FCE3;
+			remoteGlobalIDString = 817F10E12390B00900A7E45C;
 			remoteInfo = HHProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		381AF5501128D595EDC5EE0D /* Pods-HHProgressHUDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUDTests.debug.xcconfig"; path = "Target Support Files/Pods-HHProgressHUDTests/Pods-HHProgressHUDTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81D9A9DC2387D6C30085FCE3 /* HHProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81D9A9DF2387D6C30085FCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81D9A9E12387D6C30085FCE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81D9A9E32387D6C30085FCE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81D9A9E62387D6C30085FCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		81D9A9E82387D6C70085FCE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81D9A9EB2387D6C70085FCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		81D9A9ED2387D6C70085FCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81D9A9F22387D6C70085FCE3 /* HHProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81D9A9F62387D6C70085FCE3 /* HHProgressHUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProgressHUDTests.swift; sourceTree = "<group>"; };
-		81D9A9F82387D6C70085FCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81D9A9FD2387D6C70085FCE3 /* HHProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81D9AA012387D6C70085FCE3 /* HHProgressHUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProgressHUDUITests.swift; sourceTree = "<group>"; };
-		81D9AA032387D6C70085FCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E88F80BD1C711E00ED97F35 /* Pods-HHProgressHUDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUDTests.release.xcconfig"; path = "Target Support Files/Pods-HHProgressHUDTests/Pods-HHProgressHUDTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF75B7EBBAEE75106AECE985 /* Pods_HHProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C788E936CEF06A698EF18829 /* Pods-HHProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUD.release.xcconfig"; path = "Target Support Files/Pods-HHProgressHUD/Pods-HHProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
-		CECC5662E69369B5EAD084D8 /* Pods-HHProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUD.debug.xcconfig"; path = "Target Support Files/Pods-HHProgressHUD/Pods-HHProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
-		E0A8FFC4DB5B8F3DCBFE2E92 /* Pods_HHProgressHUDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHProgressHUDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F260C85057826D822FF25B /* Pods-HHProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUD_Example.debug.xcconfig"; path = "Target Support Files/Pods-HHProgressHUD_Example/Pods-HHProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8145F8512390B1E40084C363 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8145F8522390B1E40084C363 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8145F8532390B1E40084C363 /* HHProgressHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HHProgressHUD.podspec; path = ../HHProgressHUD.podspec; sourceTree = "<group>"; };
+		8145F8572390B4520084C363 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		8145F8982390C25F0084C363 /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		8145F89A2390C2B90084C363 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		8145F91B2390F50B0084C363 /* ToastAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAttributes.swift; sourceTree = "<group>"; };
+		8145F91E2390FE690084C363 /* HHProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProgressHUD.swift; sourceTree = "<group>"; };
+		817F10E22390B00900A7E45C /* HHProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		817F10E52390B00900A7E45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		817F10E72390B00900A7E45C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		817F10E92390B00900A7E45C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		817F10EC2390B00900A7E45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		817F10EE2390B00A00A7E45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		817F10F12390B00A00A7E45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		817F10F32390B00A00A7E45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817F10F82390B00A00A7E45C /* HHProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		817F10FC2390B00A00A7E45C /* HHProgressHUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProgressHUDTests.swift; sourceTree = "<group>"; };
+		817F10FE2390B00A00A7E45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817F11032390B00B00A7E45C /* HHProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		817F11072390B00B00A7E45C /* HHProgressHUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProgressHUDUITests.swift; sourceTree = "<group>"; };
+		817F11092390B00B00A7E45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F8F7300867B6F867BAA18B /* Pods-HHProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUD_Example.release.xcconfig"; path = "Target Support Files/Pods-HHProgressHUD_Example/Pods-HHProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C1B631D6C07D05F681E7880F /* Pods-HHProgressHUDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUDTests.release.xcconfig"; path = "Target Support Files/Pods-HHProgressHUDTests/Pods-HHProgressHUDTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEEF07A9DF15A0E44351877D /* Pods_HHProgressHUDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHProgressHUDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFFA8AA17A4D8384C19D168 /* Pods-HHProgressHUDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHProgressHUDTests.debug.xcconfig"; path = "Target Support Files/Pods-HHProgressHUDTests/Pods-HHProgressHUDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD4B1B2163F212781308E4E9 /* Pods_HHProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		81D9A9D92387D6C30085FCE3 /* Frameworks */ = {
+		817F10DF2390B00900A7E45C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE40E9F19481BB7441B5D7AC /* Pods_HHProgressHUD.framework in Frameworks */,
+				7AEACFD8B3B893080A053D36 /* Pods_HHProgressHUD_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9EF2387D6C70085FCE3 /* Frameworks */ = {
+		817F10F52390B00A00A7E45C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AB2FFF5A3E45B231668074A /* Pods_HHProgressHUDTests.framework in Frameworks */,
+				714C34C864355BB496BD0652 /* Pods_HHProgressHUDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9FA2387D6C70085FCE3 /* Frameworks */ = {
+		817F11002390B00B00A7E45C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,77 +102,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		266966D5FC38E7E92A23CEED /* Frameworks */ = {
+		0A7D8CBA1158683149038FC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF75B7EBBAEE75106AECE985 /* Pods_HHProgressHUD.framework */,
-				E0A8FFC4DB5B8F3DCBFE2E92 /* Pods_HHProgressHUDTests.framework */,
+				CEEF07A9DF15A0E44351877D /* Pods_HHProgressHUDTests.framework */,
+				FD4B1B2163F212781308E4E9 /* Pods_HHProgressHUD_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		59E11EA3F4271E1626D82E69 /* Pods */ = {
+		686F0AC3DF8D5AFDFCD1AFD8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CECC5662E69369B5EAD084D8 /* Pods-HHProgressHUD.debug.xcconfig */,
-				C788E936CEF06A698EF18829 /* Pods-HHProgressHUD.release.xcconfig */,
-				381AF5501128D595EDC5EE0D /* Pods-HHProgressHUDTests.debug.xcconfig */,
-				8E88F80BD1C711E00ED97F35 /* Pods-HHProgressHUDTests.release.xcconfig */,
+				FBFFA8AA17A4D8384C19D168 /* Pods-HHProgressHUDTests.debug.xcconfig */,
+				C1B631D6C07D05F681E7880F /* Pods-HHProgressHUDTests.release.xcconfig */,
+				72F260C85057826D822FF25B /* Pods-HHProgressHUD_Example.debug.xcconfig */,
+				86F8F7300867B6F867BAA18B /* Pods-HHProgressHUD_Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		81D9A9D32387D6C30085FCE3 = {
+		8145F8502390B1D00084C363 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				81D9A9DE2387D6C30085FCE3 /* HHProgressHUD */,
-				81D9A9F52387D6C70085FCE3 /* HHProgressHUDTests */,
-				81D9AA002387D6C70085FCE3 /* HHProgressHUDUITests */,
-				81D9A9DD2387D6C30085FCE3 /* Products */,
-				59E11EA3F4271E1626D82E69 /* Pods */,
-				266966D5FC38E7E92A23CEED /* Frameworks */,
+				8145F8532390B1E40084C363 /* HHProgressHUD.podspec */,
+				8145F8522390B1E40084C363 /* LICENSE */,
+				8145F8512390B1E40084C363 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8145F91D2390FBD60084C363 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				8145F91B2390F50B0084C363 /* ToastAttributes.swift */,
+				8145F89A2390C2B90084C363 /* ToastView.swift */,
+				8145F8572390B4520084C363 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		817F10D92390B00900A7E45C = {
+			isa = PBXGroup;
+			children = (
+				8145F8502390B1D00084C363 /* Podspec Metadata */,
+				817F10E42390B00900A7E45C /* HHProgressHUD */,
+				817F10FB2390B00A00A7E45C /* HHProgressHUDTests */,
+				817F11062390B00B00A7E45C /* HHProgressHUDUITests */,
+				817F10E32390B00900A7E45C /* Products */,
+				686F0AC3DF8D5AFDFCD1AFD8 /* Pods */,
+				0A7D8CBA1158683149038FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		81D9A9DD2387D6C30085FCE3 /* Products */ = {
+		817F10E32390B00900A7E45C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81D9A9DC2387D6C30085FCE3 /* HHProgressHUD.app */,
-				81D9A9F22387D6C70085FCE3 /* HHProgressHUDTests.xctest */,
-				81D9A9FD2387D6C70085FCE3 /* HHProgressHUDUITests.xctest */,
+				817F10E22390B00900A7E45C /* HHProgressHUD_Example.app */,
+				817F10F82390B00A00A7E45C /* HHProgressHUDTests.xctest */,
+				817F11032390B00B00A7E45C /* HHProgressHUDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81D9A9DE2387D6C30085FCE3 /* HHProgressHUD */ = {
+		817F10E42390B00900A7E45C /* HHProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				81D9A9DF2387D6C30085FCE3 /* AppDelegate.swift */,
-				81D9A9E12387D6C30085FCE3 /* SceneDelegate.swift */,
-				81D9A9E32387D6C30085FCE3 /* ViewController.swift */,
-				81D9A9E52387D6C30085FCE3 /* Main.storyboard */,
-				81D9A9E82387D6C70085FCE3 /* Assets.xcassets */,
-				81D9A9EA2387D6C70085FCE3 /* LaunchScreen.storyboard */,
-				81D9A9ED2387D6C70085FCE3 /* Info.plist */,
+				8145F91D2390FBD60084C363 /* Toast */,
+				817F10E52390B00900A7E45C /* AppDelegate.swift */,
+				8145F8982390C25F0084C363 /* UIView+Ex.swift */,
+				817F10E72390B00900A7E45C /* SceneDelegate.swift */,
+				817F10E92390B00900A7E45C /* ViewController.swift */,
+				817F10EB2390B00900A7E45C /* Main.storyboard */,
+				817F10EE2390B00A00A7E45C /* Assets.xcassets */,
+				817F10F02390B00A00A7E45C /* LaunchScreen.storyboard */,
+				817F10F32390B00A00A7E45C /* Info.plist */,
+				8145F91E2390FE690084C363 /* HHProgressHUD.swift */,
 			);
 			path = HHProgressHUD;
 			sourceTree = "<group>";
 		};
-		81D9A9F52387D6C70085FCE3 /* HHProgressHUDTests */ = {
+		817F10FB2390B00A00A7E45C /* HHProgressHUDTests */ = {
 			isa = PBXGroup;
 			children = (
-				81D9A9F62387D6C70085FCE3 /* HHProgressHUDTests.swift */,
-				81D9A9F82387D6C70085FCE3 /* Info.plist */,
+				817F10FC2390B00A00A7E45C /* HHProgressHUDTests.swift */,
+				817F10FE2390B00A00A7E45C /* Info.plist */,
 			);
 			path = HHProgressHUDTests;
 			sourceTree = "<group>";
 		};
-		81D9AA002387D6C70085FCE3 /* HHProgressHUDUITests */ = {
+		817F11062390B00B00A7E45C /* HHProgressHUDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				81D9AA012387D6C70085FCE3 /* HHProgressHUDUITests.swift */,
-				81D9AA032387D6C70085FCE3 /* Info.plist */,
+				817F11072390B00B00A7E45C /* HHProgressHUDUITests.swift */,
+				817F11092390B00B00A7E45C /* Info.plist */,
 			);
 			path = HHProgressHUDUITests;
 			sourceTree = "<group>";
@@ -164,86 +203,86 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81D9A9DB2387D6C30085FCE3 /* HHProgressHUD */ = {
+		817F10E12390B00900A7E45C /* HHProgressHUD_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81D9AA062387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUD" */;
+			buildConfigurationList = 817F110C2390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUD_Example" */;
 			buildPhases = (
-				517BA982C7A3FEF3F90DD846 /* [CP] Check Pods Manifest.lock */,
-				81D9A9D82387D6C30085FCE3 /* Sources */,
-				81D9A9D92387D6C30085FCE3 /* Frameworks */,
-				81D9A9DA2387D6C30085FCE3 /* Resources */,
-				E5ED0E526C62432A9D17423A /* [CP] Embed Pods Frameworks */,
+				00450C0A3EFC6653432B472C /* [CP] Check Pods Manifest.lock */,
+				817F10DE2390B00900A7E45C /* Sources */,
+				817F10DF2390B00900A7E45C /* Frameworks */,
+				817F10E02390B00900A7E45C /* Resources */,
+				EAF045EEED51046B50943FA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HHProgressHUD;
+			name = HHProgressHUD_Example;
 			productName = HHProgressHUD;
-			productReference = 81D9A9DC2387D6C30085FCE3 /* HHProgressHUD.app */;
+			productReference = 817F10E22390B00900A7E45C /* HHProgressHUD_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		81D9A9F12387D6C70085FCE3 /* HHProgressHUDTests */ = {
+		817F10F72390B00A00A7E45C /* HHProgressHUDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81D9AA092387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUDTests" */;
+			buildConfigurationList = 817F110F2390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUDTests" */;
 			buildPhases = (
-				1F4BD763DB616AD2EB1AE787 /* [CP] Check Pods Manifest.lock */,
-				81D9A9EE2387D6C70085FCE3 /* Sources */,
-				81D9A9EF2387D6C70085FCE3 /* Frameworks */,
-				81D9A9F02387D6C70085FCE3 /* Resources */,
+				8D0FC800771ADEB9AE69EA35 /* [CP] Check Pods Manifest.lock */,
+				817F10F42390B00A00A7E45C /* Sources */,
+				817F10F52390B00A00A7E45C /* Frameworks */,
+				817F10F62390B00A00A7E45C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81D9A9F42387D6C70085FCE3 /* PBXTargetDependency */,
+				817F10FA2390B00A00A7E45C /* PBXTargetDependency */,
 			);
 			name = HHProgressHUDTests;
 			productName = HHProgressHUDTests;
-			productReference = 81D9A9F22387D6C70085FCE3 /* HHProgressHUDTests.xctest */;
+			productReference = 817F10F82390B00A00A7E45C /* HHProgressHUDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		81D9A9FC2387D6C70085FCE3 /* HHProgressHUDUITests */ = {
+		817F11022390B00B00A7E45C /* HHProgressHUDUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81D9AA0C2387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUDUITests" */;
+			buildConfigurationList = 817F11122390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUDUITests" */;
 			buildPhases = (
-				81D9A9F92387D6C70085FCE3 /* Sources */,
-				81D9A9FA2387D6C70085FCE3 /* Frameworks */,
-				81D9A9FB2387D6C70085FCE3 /* Resources */,
+				817F10FF2390B00B00A7E45C /* Sources */,
+				817F11002390B00B00A7E45C /* Frameworks */,
+				817F11012390B00B00A7E45C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81D9A9FF2387D6C70085FCE3 /* PBXTargetDependency */,
+				817F11052390B00B00A7E45C /* PBXTargetDependency */,
 			);
 			name = HHProgressHUDUITests;
 			productName = HHProgressHUDUITests;
-			productReference = 81D9A9FD2387D6C70085FCE3 /* HHProgressHUDUITests.xctest */;
+			productReference = 817F11032390B00B00A7E45C /* HHProgressHUDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		81D9A9D42387D6C30085FCE3 /* Project object */ = {
+		817F10DA2390B00900A7E45C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = iOS;
 				TargetAttributes = {
-					81D9A9DB2387D6C30085FCE3 = {
+					817F10E12390B00900A7E45C = {
 						CreatedOnToolsVersion = 11.1;
 					};
-					81D9A9F12387D6C70085FCE3 = {
+					817F10F72390B00A00A7E45C = {
 						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 81D9A9DB2387D6C30085FCE3;
+						TestTargetID = 817F10E12390B00900A7E45C;
 					};
-					81D9A9FC2387D6C70085FCE3 = {
+					817F11022390B00B00A7E45C = {
 						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 81D9A9DB2387D6C30085FCE3;
+						TestTargetID = 817F10E12390B00900A7E45C;
 					};
 				};
 			};
-			buildConfigurationList = 81D9A9D72387D6C30085FCE3 /* Build configuration list for PBXProject "HHProgressHUD" */;
+			buildConfigurationList = 817F10DD2390B00900A7E45C /* Build configuration list for PBXProject "HHProgressHUD" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,37 +290,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 81D9A9D32387D6C30085FCE3;
-			productRefGroup = 81D9A9DD2387D6C30085FCE3 /* Products */;
+			mainGroup = 817F10D92390B00900A7E45C;
+			productRefGroup = 817F10E32390B00900A7E45C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81D9A9DB2387D6C30085FCE3 /* HHProgressHUD */,
-				81D9A9F12387D6C70085FCE3 /* HHProgressHUDTests */,
-				81D9A9FC2387D6C70085FCE3 /* HHProgressHUDUITests */,
+				817F10E12390B00900A7E45C /* HHProgressHUD_Example */,
+				817F10F72390B00A00A7E45C /* HHProgressHUDTests */,
+				817F11022390B00B00A7E45C /* HHProgressHUDUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		81D9A9DA2387D6C30085FCE3 /* Resources */ = {
+		817F10E02390B00900A7E45C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D9A9EC2387D6C70085FCE3 /* LaunchScreen.storyboard in Resources */,
-				81D9A9E92387D6C70085FCE3 /* Assets.xcassets in Resources */,
-				81D9A9E72387D6C30085FCE3 /* Main.storyboard in Resources */,
+				817F10F22390B00A00A7E45C /* LaunchScreen.storyboard in Resources */,
+				817F10EF2390B00A00A7E45C /* Assets.xcassets in Resources */,
+				8145F8542390B1E40084C363 /* README.md in Resources */,
+				8145F8562390B1E40084C363 /* HHProgressHUD.podspec in Resources */,
+				817F10ED2390B00900A7E45C /* Main.storyboard in Resources */,
+				8145F8552390B1E40084C363 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9F02387D6C70085FCE3 /* Resources */ = {
+		817F10F62390B00A00A7E45C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9FB2387D6C70085FCE3 /* Resources */ = {
+		817F11012390B00B00A7E45C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,7 +333,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F4BD763DB616AD2EB1AE787 /* [CP] Check Pods Manifest.lock */ = {
+		00450C0A3EFC6653432B472C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHProgressHUD_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D0FC800771ADEB9AE69EA35 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,102 +377,85 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		517BA982C7A3FEF3F90DD846 /* [CP] Check Pods Manifest.lock */ = {
+		EAF045EEED51046B50943FA2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HHProgressHUD-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5ED0E526C62432A9D17423A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD/Pods-HHProgressHUD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD_Example/Pods-HHProgressHUD_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD/Pods-HHProgressHUD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD_Example/Pods-HHProgressHUD_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD/Pods-HHProgressHUD-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHProgressHUD_Example/Pods-HHProgressHUD_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		81D9A9D82387D6C30085FCE3 /* Sources */ = {
+		817F10DE2390B00900A7E45C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D9A9E42387D6C30085FCE3 /* ViewController.swift in Sources */,
-				81D9A9E02387D6C30085FCE3 /* AppDelegate.swift in Sources */,
-				81D9A9E22387D6C30085FCE3 /* SceneDelegate.swift in Sources */,
+				817F10EA2390B00900A7E45C /* ViewController.swift in Sources */,
+				817F10E62390B00900A7E45C /* AppDelegate.swift in Sources */,
+				817F10E82390B00900A7E45C /* SceneDelegate.swift in Sources */,
+				8145F8992390C25F0084C363 /* UIView+Ex.swift in Sources */,
+				8145F91C2390F50B0084C363 /* ToastAttributes.swift in Sources */,
+				8145F89B2390C2B90084C363 /* ToastView.swift in Sources */,
+				8145F8582390B4520084C363 /* Toast.swift in Sources */,
+				8145F91F2390FE690084C363 /* HHProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9EE2387D6C70085FCE3 /* Sources */ = {
+		817F10F42390B00A00A7E45C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D9A9F72387D6C70085FCE3 /* HHProgressHUDTests.swift in Sources */,
+				817F10FD2390B00A00A7E45C /* HHProgressHUDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D9A9F92387D6C70085FCE3 /* Sources */ = {
+		817F10FF2390B00B00A7E45C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D9AA022387D6C70085FCE3 /* HHProgressHUDUITests.swift in Sources */,
+				817F11082390B00B00A7E45C /* HHProgressHUDUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		81D9A9F42387D6C70085FCE3 /* PBXTargetDependency */ = {
+		817F10FA2390B00A00A7E45C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 81D9A9DB2387D6C30085FCE3 /* HHProgressHUD */;
-			targetProxy = 81D9A9F32387D6C70085FCE3 /* PBXContainerItemProxy */;
+			target = 817F10E12390B00900A7E45C /* HHProgressHUD_Example */;
+			targetProxy = 817F10F92390B00A00A7E45C /* PBXContainerItemProxy */;
 		};
-		81D9A9FF2387D6C70085FCE3 /* PBXTargetDependency */ = {
+		817F11052390B00B00A7E45C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 81D9A9DB2387D6C30085FCE3 /* HHProgressHUD */;
-			targetProxy = 81D9A9FE2387D6C70085FCE3 /* PBXContainerItemProxy */;
+			target = 817F10E12390B00900A7E45C /* HHProgressHUD_Example */;
+			targetProxy = 817F11042390B00B00A7E45C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		81D9A9E52387D6C30085FCE3 /* Main.storyboard */ = {
+		817F10EB2390B00900A7E45C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				81D9A9E62387D6C30085FCE3 /* Base */,
+				817F10EC2390B00900A7E45C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		81D9A9EA2387D6C70085FCE3 /* LaunchScreen.storyboard */ = {
+		817F10F02390B00A00A7E45C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				81D9A9EB2387D6C70085FCE3 /* Base */,
+				817F10F12390B00A00A7E45C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -416,7 +463,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		81D9AA042387D6C70085FCE3 /* Debug */ = {
+		817F110A2390B00B00A7E45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -476,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		81D9AA052387D6C70085FCE3 /* Release */ = {
+		817F110B2390B00B00A7E45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -530,9 +577,9 @@
 			};
 			name = Release;
 		};
-		81D9AA072387D6C70085FCE3 /* Debug */ = {
+		817F110D2390B00B00A7E45C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CECC5662E69369B5EAD084D8 /* Pods-HHProgressHUD.debug.xcconfig */;
+			baseConfigurationReference = 72F260C85057826D822FF25B /* Pods-HHProgressHUD_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,9 +596,9 @@
 			};
 			name = Debug;
 		};
-		81D9AA082387D6C70085FCE3 /* Release */ = {
+		817F110E2390B00B00A7E45C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C788E936CEF06A698EF18829 /* Pods-HHProgressHUD.release.xcconfig */;
+			baseConfigurationReference = 86F8F7300867B6F867BAA18B /* Pods-HHProgressHUD_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,9 +615,9 @@
 			};
 			name = Release;
 		};
-		81D9AA0A2387D6C70085FCE3 /* Debug */ = {
+		817F11102390B00B00A7E45C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 381AF5501128D595EDC5EE0D /* Pods-HHProgressHUDTests.debug.xcconfig */;
+			baseConfigurationReference = FBFFA8AA17A4D8384C19D168 /* Pods-HHProgressHUDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,9 +638,9 @@
 			};
 			name = Debug;
 		};
-		81D9AA0B2387D6C70085FCE3 /* Release */ = {
+		817F11112390B00B00A7E45C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E88F80BD1C711E00ED97F35 /* Pods-HHProgressHUDTests.release.xcconfig */;
+			baseConfigurationReference = C1B631D6C07D05F681E7880F /* Pods-HHProgressHUDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -614,7 +661,7 @@
 			};
 			name = Release;
 		};
-		81D9AA0D2387D6C70085FCE3 /* Debug */ = {
+		817F11132390B00B00A7E45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -634,7 +681,7 @@
 			};
 			name = Debug;
 		};
-		81D9AA0E2387D6C70085FCE3 /* Release */ = {
+		817F11142390B00B00A7E45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -657,43 +704,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81D9A9D72387D6C30085FCE3 /* Build configuration list for PBXProject "HHProgressHUD" */ = {
+		817F10DD2390B00900A7E45C /* Build configuration list for PBXProject "HHProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81D9AA042387D6C70085FCE3 /* Debug */,
-				81D9AA052387D6C70085FCE3 /* Release */,
+				817F110A2390B00B00A7E45C /* Debug */,
+				817F110B2390B00B00A7E45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81D9AA062387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUD" */ = {
+		817F110C2390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUD_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81D9AA072387D6C70085FCE3 /* Debug */,
-				81D9AA082387D6C70085FCE3 /* Release */,
+				817F110D2390B00B00A7E45C /* Debug */,
+				817F110E2390B00B00A7E45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81D9AA092387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUDTests" */ = {
+		817F110F2390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81D9AA0A2387D6C70085FCE3 /* Debug */,
-				81D9AA0B2387D6C70085FCE3 /* Release */,
+				817F11102390B00B00A7E45C /* Debug */,
+				817F11112390B00B00A7E45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81D9AA0C2387D6C70085FCE3 /* Build configuration list for PBXNativeTarget "HHProgressHUDUITests" */ = {
+		817F11122390B00B00A7E45C /* Build configuration list for PBXNativeTarget "HHProgressHUDUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81D9AA0D2387D6C70085FCE3 /* Debug */,
-				81D9AA0E2387D6C70085FCE3 /* Release */,
+				817F11132390B00B00A7E45C /* Debug */,
+				817F11142390B00B00A7E45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 81D9A9D42387D6C30085FCE3 /* Project object */;
+	rootObject = 817F10DA2390B00900A7E45C /* Project object */;
 }

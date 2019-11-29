@@ -1,16 +1,19 @@
 PODS:
   - HHProgressHUD (0.1.0)
   - QuickLayout (3.0.0)
+  - SnapKit (5.0.1)
   - SwiftEntryKit (1.2.3):
     - QuickLayout (= 3.0.0)
 
 DEPENDENCIES:
   - HHProgressHUD (from `../`)
-  - SwiftEntryKit (~> 1.2.3)
+  - SnapKit
+  - SwiftEntryKit
 
 SPEC REPOS:
   trunk:
     - QuickLayout
+    - SnapKit
     - SwiftEntryKit
 
 EXTERNAL SOURCES:
@@ -20,8 +23,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HHProgressHUD: 31103252673c1c2d39de9556b32b47fd990505bc
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
 
-PODFILE CHECKSUM: ce2c4e34bf5cce07ca67e58cbc2877a787ebf6e6
+PODFILE CHECKSUM: 9b6137235fd492a8ab3b1f0f9d99627d4818f1d4
 
 COCOAPODS: 1.8.3
