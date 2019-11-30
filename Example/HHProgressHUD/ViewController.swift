@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         }
         // Create second button
         let buttonTwo = DefaultButton(title: "确定") {
-            HHProgressHUD.toast("网络异常")
+            HHProgressHUD.error("网络异常")
         }
         buttonTwo.dismissOnTap = false
         buttonTwo.titleColor = UIColor.red

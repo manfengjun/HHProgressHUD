@@ -28,11 +28,13 @@ public struct HudStyles {
 
     /** vertical offset */
     public var verticalOffset: CGFloat = 80
-    public init(font: UIFont = UIFont.boldSystemFont(ofSize: 18),
-                color: UIColor = .white,
-                alignment: NSTextAlignment = .center,
-                numberOfLines: Int = 0,
-                displayDuration: TimeInterval = 3) {
+    public init(
+        font: UIFont = UIFont.boldSystemFont(ofSize: 18),
+        color: UIColor = .white,
+        alignment: NSTextAlignment = .center,
+        numberOfLines: Int = 0,
+        displayDuration: TimeInterval = 3
+    ) {
         self.font = font
         self.color = color
         self.alignment = alignment
@@ -52,17 +54,36 @@ extension EKAttributes {
         var attributes = EKAttributes.centerFloat
         attributes.positionConstraints.safeArea = .empty(fillSafeArea: false)
         attributes.windowLevel = .statusBar
+        attributes.screenInteraction = .absorbTouches
+        attributes.entryInteraction = .absorbTouches
         attributes.displayDuration = 3
         attributes.hapticFeedbackType = .success
-        attributes.entryInteraction = .absorbTouches
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
-        attributes.popBehavior = .animated(animation: .init(translate: .init(duration: 0.3), scale: .init(from: 1, to: 0.7, duration: 0.7)))
+        attributes.entranceAnimation = .init(
+            scale: .init(
+                from: 0.9,
+                to: 1,
+                duration: 0.4,
+                spring: .init(damping: 1, initialVelocity: 0)
+            ),
+            fade: .init(
+                from: 0,
+                to: 1,
+                duration: 0.3
+            )
+        )
+        attributes.exitAnimation = .init(
+            fade: .init(
+                from: 1,
+                to: 0,
+                duration: 0.2
+            )
+        )
         attributes.shadow = .active(with: .init(color: EKColor(red: 50, green: 50, blue: 50), opacity: 0.5, radius: 5))
         attributes.statusBar = .dark
         attributes.roundCorners = .all(radius: 15)
         attributes.scroll = .disabled
         attributes.positionConstraints.maxSize = .init(width: .constant(value: min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)), height: .intrinsic)
-        attributes.positionConstraints.verticalOffset = 80
         return attributes
     }
 }
@@ -76,7 +97,8 @@ extension EKProperty.LabelStyle {
             color: .white,
             alignment: .center,
             displayMode: .inferred,
-            numberOfLines: 0)
+            numberOfLines: 0
+        )
         return style
     }
 }
