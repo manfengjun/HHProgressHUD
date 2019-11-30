@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import HHProgressHUD
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     @IBAction func click(_ sender: Any) {
         print("弹出")
-        HHProgressHUD.setStyle(styles: ToastStyles(font: UIFont.systemFont(ofSize: 18), color: .blue))
+        HHProgressHUD.setStyle(styles: ToastStyles())
         HHProgressHUD.toast("请求失败，请稍后重试!")
     }
     

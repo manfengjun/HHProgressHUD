@@ -31,8 +31,8 @@ public class HHProgressHUD {
     private init() {}
 }
 
-extension HHProgressHUD {
-    static func toast(_ message: String,
+public extension HHProgressHUD {
+    public static func toast(_ message: String,
                       duration: TimeInterval? = nil,
                       position: Position = .bottom,
                       verticalOffset: CGFloat? = nil) {
@@ -42,7 +42,7 @@ extension HHProgressHUD {
                      verticalOffset: verticalOffset)
     }
 
-    static func setStyle(styles: ToastStyles) {
+    public static func setStyle(styles: ToastStyles) {
         Toast.shared.styles = styles
     }
 }

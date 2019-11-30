@@ -28,10 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/acct<blob>=<NULL>/HHProgressHUD.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'HHProgressHUD/Classes/**/*'
-  
+  # s.source_files = 'JJEx/Classes/**/*'
+  s.subspec 'Core' do |c|
+      c.dependency 'SwiftEntryKit'
+      c.source_files = 'HHProgressHUD/Classes/Core/**/*'
+  end
+  s.subspec 'Toast' do |toast|
+      toast.dependency "HHProgressHUD/Core"
+      toast.source_files = 'HHProgressHUD/Classes/Toast/**/*'
+  end
   # s.resource_bundles = {
   #   'HHProgressHUD' => ['HHProgressHUD/Assets/*.png']
   # }

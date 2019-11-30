@@ -16,27 +16,37 @@ public struct ToastStyles {
     public var font: UIFont = UIFont.systemFont(ofSize: 14)
 
     /** Color of the text */
-    public var color: UIColor = EKColor(red: 50, green: 50, blue: 50).color(for: .current, mode: .dark)
+    public var color: UIColor = .white
 
     /** Text Alignment */
     public var alignment: NSTextAlignment = .center
 
     /** Number of lines */
     public var numberOfLines: Int = 0
-    
+
     /** Dismiss TimeInterval */
     public var displayDuration: TimeInterval = 3
 
     /** vertical offset */
     public var verticalOffset: CGFloat = 80
-
+    public init(font: UIFont = UIFont.systemFont(ofSize: 14),
+                color: UIColor = .white,
+                alignment: NSTextAlignment = .center,
+                numberOfLines: Int = 0,
+                displayDuration: TimeInterval = 3,
+                verticalOffset: CGFloat = 80) {
+        self.font = font
+        self.color = color
+        self.alignment = alignment
+        self.numberOfLines = numberOfLines
+        self.displayDuration = displayDuration
+        self.verticalOffset = verticalOffset
+    }
 }
 
 // MARK: - toast arttributes
 
-public struct ToastArttributes {
-    
-}
+public struct ToastArttributes {}
 
 // MARK: - Toast EKAttributes Extension
 
