@@ -64,11 +64,21 @@ public extension HHProgressHUD {
     static func success(_ message: String) {
         Hud.success(message)
     }
+
     static func error(_ message: String) {
         Hud.error(message)
     }
+
     static func info(_ message: String) {
         Hud.info(message)
+    }
+
+    static func show(_ message: String? = nil) {
+        Hud.show(message)
+    }
+
+    static func dismiss() {
+        Hud.dismiss()
     }
 
     static func setStyle(styles: HudStyles) {

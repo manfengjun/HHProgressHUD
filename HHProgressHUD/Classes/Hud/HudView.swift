@@ -63,6 +63,7 @@ extension HudView {
             icon.heightAnchor.constraint(equalToConstant: 40)
         ])
         
+        
         let maxSize = CGSize(width: UIScreen.main.bounds.width - 160, height: 40)
         let width = label.hh_computeWidth(by: CGSize(width: maxSize.width, height: 20))
         let height = label.hh_computeHeight(by: maxSize)

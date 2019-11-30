@@ -5,6 +5,7 @@
 //  Created by ios on 2019/11/30.
 //
 
+import NVActivityIndicatorView
 import SwiftEntryKit
 import UIKit
 public enum HUDType {
@@ -39,10 +40,10 @@ class Hud {
         labelStyle.font = styles.font
         labelStyle.numberOfLines = styles.numberOfLines
         labelStyle.alignment = styles.alignment
-        let toast = HudView(with: EKProperty.LabelContent(text: message,
-                                                          style: labelStyle),
-                            hudType: hudType)
-        SwiftEntryKit.display(entry: toast, using: attributes)
+        let hud = HudView(with: EKProperty.LabelContent(text: message,
+                                                        style: labelStyle),
+                          hudType: hudType)
+        SwiftEntryKit.display(entry: hud, using: attributes)
     }
 
     static func success(_ message: String) {
@@ -55,5 +56,20 @@ class Hud {
 
     static func info(_ message: String) {
         deplay(message, hudType: .info)
+    }
+}
+
+extension Hud {
+    static func show(_ message: String? = nil) {
+        let styles = Hud.shared.styles
+        var attributes = EKAttributes.hh_hud
+        attributes.displayDuration = .infinity
+        let progress = ProgressView(message: message)
+        progress.start()
+        SwiftEntryKit.display(entry: progress, using: attributes)
+    }
+
+    static func dismiss() {
+        SwiftEntryKit.dismiss()
     }
 }
