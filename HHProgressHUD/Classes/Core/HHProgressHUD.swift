@@ -29,10 +29,21 @@ public class HHProgressHUD {
     public static var shared: HHProgressHUD = HHProgressHUD()
 
     private init() {}
+    /// 供其他模块使用
+    public static var bundle: Bundle? {
+        let temBundle = Bundle(for: HHProgressHUD.self)
+        if let url = temBundle.url(forResource: "HHProgressHUD", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            return bundle ?? temBundle
+        }
+        return temBundle
+    }
 }
 
+// MARK: - Toast
+
 public extension HHProgressHUD {
-    public static func toast(_ message: String,
+    static func toast(_ message: String,
                       duration: TimeInterval? = nil,
                       position: Position = .bottom,
                       verticalOffset: CGFloat? = nil) {
@@ -42,7 +53,25 @@ public extension HHProgressHUD {
                      verticalOffset: verticalOffset)
     }
 
-    public static func setStyle(styles: ToastStyles) {
+    static func setStyle(styles: ToastStyles) {
         Toast.shared.styles = styles
+    }
+}
+
+// MARK: - HUD
+
+public extension HHProgressHUD {
+    static func success(_ message: String) {
+        Hud.success(message)
+    }
+    static func error(_ message: String) {
+        Hud.error(message)
+    }
+    static func info(_ message: String) {
+        Hud.info(message)
+    }
+
+    static func setStyle(styles: HudStyles) {
+        Hud.shared.styles = styles
     }
 }

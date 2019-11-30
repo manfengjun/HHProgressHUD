@@ -6,6 +6,8 @@ inhibit_all_warnings!
 target 'HHProgressHUD_Example' do
   pod 'HHProgressHUD', :path => '../'
   pod 'SwiftEntryKit'
+  pod 'PopupDialog'
+  pod 'NVActivityIndicatorView'
   target 'HHProgressHUDTests' do
     inherit! :search_paths
 

@@ -33,17 +33,23 @@ TODO: Add long description of the pod here.
   # s.source_files = 'JJEx/Classes/**/*'
   s.subspec 'Core' do |c|
       c.dependency 'SwiftEntryKit'
+      c.dependency 'PopupDialog'
+      c.dependency 'NVActivityIndicatorView'
       c.source_files = 'HHProgressHUD/Classes/Core/**/*'
   end
-  s.subspec 'Toast' do |toast|
-      toast.dependency "HHProgressHUD/Core"
-      toast.source_files = 'HHProgressHUD/Classes/Toast/**/*'
+  s.subspec 'Toast' do |t|
+      t.dependency "HHProgressHUD/Core"
+      t.source_files = 'HHProgressHUD/Classes/Toast/**/*'
   end
-  # s.resource_bundles = {
-  #   'HHProgressHUD' => ['HHProgressHUD/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Hud' do |h|
+      h.dependency "HHProgressHUD/Core"
+      h.source_files = 'HHProgressHUD/Classes/Hud/**/*'
+  end
+  s.subspec 'Alert' do |a|
+      a.dependency "HHProgressHUD/Core"
+      a.source_files = 'HHProgressHUD/Classes/Alert/**/*'
+  end
+   s.resource_bundles = {
+     'HHProgressHUD' => ['HHProgressHUD/Assets/*{.xcassets}']
+   }
 end

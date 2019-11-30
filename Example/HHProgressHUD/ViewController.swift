@@ -8,6 +8,7 @@
 
 import UIKit
 import HHProgressHUD
+import PopupDialog
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,9 +18,31 @@ class ViewController: UIViewController {
 
     @IBAction func click(_ sender: Any) {
         print("弹出")
-        HHProgressHUD.setStyle(styles: ToastStyles())
-        HHProgressHUD.toast("请求失败，请稍后重试!")
+        // Create the dialog
+        let popup = PopupDialog(title: "温馨提示",
+                                message: "是否确定删除",
+                                buttonAlignment: .horizontal,
+                                transitionStyle: .zoomIn,
+                                tapGestureDismissal: false)
+        // Create first button
+        let buttonOne = CancelButton(title: "取消") {
+            
+        }
+        // Create second button
+        let buttonTwo = DefaultButton(title: "确定") {
+            HHProgressHUD.toast("网络异常")
+        }
+        buttonTwo.dismissOnTap = false
+        buttonTwo.titleColor = UIColor.red
+        // Add buttons to dialog
+        popup.addButtons([buttonOne, buttonTwo])
+        // Present dialog
+        
+        self.present(popup, animated: true, completion: nil)
+        
+//        HHProgressHUD.setStyle(styles: ToastStyles())
+//        HHProgressHUD.success("添加成功")
+//        HHProgressHUD.toast("网络异常")
     }
-    
 }
 
