@@ -13,22 +13,22 @@ import UIKit
 
 public struct ToastStyles {
     /** Font of the text */
-    public var font: UIFont = UIFont.systemFont(ofSize: 14)
+    public var font: UIFont
 
     /** Color of the text */
-    public var color: UIColor = .white
+    public var color: UIColor
 
     /** Text Alignment */
-    public var alignment: NSTextAlignment = .center
+    public var alignment: NSTextAlignment
 
     /** Number of lines */
-    public var numberOfLines: Int = 0
+    public var numberOfLines: Int
 
     /** Dismiss TimeInterval */
-    public var displayDuration: TimeInterval = 3
+    public var displayDuration: TimeInterval
 
     /** vertical offset */
-    public var verticalOffset: CGFloat = 80
+    public var verticalOffset: CGFloat
     public init(font: UIFont = UIFont.systemFont(ofSize: 14),
                 color: UIColor = .white,
                 alignment: NSTextAlignment = .center,
