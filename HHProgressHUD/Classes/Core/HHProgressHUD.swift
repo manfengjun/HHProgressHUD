@@ -85,3 +85,15 @@ public extension HHProgressHUD {
         Hud.shared.styles = styles
     }
 }
+
+public extension HHProgressHUD {
+    static func popup(on vc: UIViewController,
+                      title: String = "贴心提醒",
+                      content: String,
+                      sureTitle: String? = nil,
+                      cancelTitle: String? = nil,
+                      sure: @escaping () -> Void,
+                      cancel: @escaping () -> Void) {
+        Alert.popup(on: vc, title: title, content: content, sureTitle: sureTitle, cancelTitle: cancelTitle, sure: sure, cancel: cancel)
+    }
+}

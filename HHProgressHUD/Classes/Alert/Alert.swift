@@ -29,7 +29,7 @@ class Alert {
         let buttonTwo = DefaultButton(title: sureTitle ?? "确定") {
             sure()
         }
-        buttonTwo.titleColor = UIColor.color_main
+        buttonTwo.titleColor = UIColor.blue
         // Add buttons to dialog
         popup.addButtons([buttonOne, buttonTwo])
         // Present dialog
