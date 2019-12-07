@@ -8,7 +8,7 @@
 import SwiftEntryKit
 import UIKit
 
-class HudView: UIView {
+public class HudView: UIView {
     private var label: UILabel!
     private var icon: UIImageView!
     private var content: EKProperty.LabelContent!

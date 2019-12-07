@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     func hh_computeHeight(by size: CGSize) -> CGFloat {
         let statusLabelText: NSString = (text ?? "") as NSString
         let dic = NSDictionary(object: font!, forKey: NSAttributedString.Key.font as NSCopying)

@@ -20,7 +20,7 @@ public struct ProgressContent {
     }
 }
 
-class ProgressView: UIView {
+public class ProgressView: UIView {
     private var label: UILabel!
     private var activityIndi​​catorView: NVActivityIndicatorView!
     private var progress: ProgressContent = ProgressContent(type: .circleStrokeSpin, color: .white)

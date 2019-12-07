@@ -7,7 +7,7 @@
 
 import PopupDialog
 import UIKit
-class Alert {
+public class Alert {
     static func popup(on vc: UIViewController,
                       title: String = "贴心提醒",
                       content: String,

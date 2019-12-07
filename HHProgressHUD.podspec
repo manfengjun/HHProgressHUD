@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.name             = 'HHProgressHUD'
   s.version          = '0.1.0'
   s.summary          = 'Toast Alert Hud'
-  s.description      = ""
+  s.description      = "Toast Alert Hud"
 
-  s.homepage         = 'https://github.com/acct<blob>=<NULL>/HHProgressHUD'
+  s.homepage         = 'https://github.com/manfengjun'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jun' => 'chinafengjun@gmail.com' }

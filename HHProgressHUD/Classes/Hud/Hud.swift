@@ -26,7 +26,7 @@ public enum HUDType {
     }
 }
 
-class Hud {
+public class Hud {
     public var styles: HudStyles = HudStyles()
 
     public static var shared: Hud = Hud()
@@ -59,7 +59,7 @@ class Hud {
     }
 }
 
-extension Hud {
+punlic extension Hud {
     static func show(_ message: String? = nil) {
         let styles = Hud.shared.styles
         var attributes = EKAttributes.hh_hud
