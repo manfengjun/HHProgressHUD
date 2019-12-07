@@ -1,29 +1,6 @@
 PODS:
   - DynamicBlurView (4.0.0)
-  - HHProgressHUD (0.1.0):
-    - HHProgressHUD/Alert (= 0.1.0)
-    - HHProgressHUD/Core (= 0.1.0)
-    - HHProgressHUD/Hud (= 0.1.0)
-    - HHProgressHUD/Toast (= 0.1.0)
-    - NVActivityIndicatorView
-    - PopupDialog
-    - SwiftEntryKit
-  - HHProgressHUD/Alert (0.1.0):
-    - HHProgressHUD/Core
-    - NVActivityIndicatorView
-    - PopupDialog
-    - SwiftEntryKit
-  - HHProgressHUD/Core (0.1.0):
-    - NVActivityIndicatorView
-    - PopupDialog
-    - SwiftEntryKit
-  - HHProgressHUD/Hud (0.1.0):
-    - HHProgressHUD/Core
-    - NVActivityIndicatorView
-    - PopupDialog
-    - SwiftEntryKit
-  - HHProgressHUD/Toast (0.1.0):
-    - HHProgressHUD/Core
+  - HHProgressHUD (0.1.1):
     - NVActivityIndicatorView
     - PopupDialog
     - SwiftEntryKit
@@ -56,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
-  HHProgressHUD: e1e7af2b607a306b0aa5c0e956d79cd682e5f1d7
+  HHProgressHUD: d484fb23a19967ea22f45a6568c823e37cff4995
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a

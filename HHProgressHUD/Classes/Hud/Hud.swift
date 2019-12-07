@@ -25,13 +25,12 @@ public enum HUDType {
         }
     }
 }
-
-public class Hud {
+class Hud {
     public var styles: HudStyles = HudStyles()
 
     public static var shared: Hud = Hud()
     private init() {}
-    static func deplay(_ message: String, hudType: HUDType) {
+    public static func deplay(_ message: String, hudType: HUDType) {
         let styles = Hud.shared.styles
         var attributes = EKAttributes.hh_hud
         attributes.displayDuration = styles.displayDuration
@@ -58,10 +57,8 @@ public class Hud {
         deplay(message, hudType: .info)
     }
 }
-
-punlic extension Hud {
+ extension Hud {
     static func show(_ message: String? = nil) {
-        let styles = Hud.shared.styles
         var attributes = EKAttributes.hh_hud
         attributes.displayDuration = .infinity
         let progress = ProgressView(message: message)

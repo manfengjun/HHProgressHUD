@@ -21,27 +21,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.swift_versions = '5.1'
-  # s.source_files = 'JJEx/Classes/**/*'
-  s.subspec 'Core' do |c|
-      
-      c.source_files = 'HHProgressHUD/Classes/Core/**/*'
-  end
-  s.subspec 'Toast' do |t|
-      t.dependency "HHProgressHUD/Core"
-      t.source_files = 'HHProgressHUD/Classes/Toast/**/*'
-  end
-  s.subspec 'Hud' do |h|
-      h.dependency "HHProgressHUD/Core"
-      h.source_files = 'HHProgressHUD/Classes/Hud/**/*'
-  end
-  s.subspec 'Alert' do |a|
-      a.dependency "HHProgressHUD/Core"
-      a.source_files = 'HHProgressHUD/Classes/Alert/**/*'
-  end
-   s.resource_bundles = {
-     'HHProgressHUD' => ['HHProgressHUD/Assets/*{.xcassets}']
-   }
-   s.dependency 'SwiftEntryKit'
-   s.dependency 'PopupDialog'
-   s.dependency 'NVActivityIndicatorView'
+  s.source_files = 'HHProgressHUD/Classes/**/*'
+  s.dependency 'SwiftEntryKit'
+  s.dependency 'PopupDialog'
+  s.dependency 'NVActivityIndicatorView'
 end
