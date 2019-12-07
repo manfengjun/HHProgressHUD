@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHProgressHUD'
-  s.version          = '0.1.0'
-  s.summary          = 'Toast Alert Hud'
-  s.description      = "Toast Alert Hud"
+  s.version          = '0.1.1'
+  s.summary          = 'HHProgressHUD SDK'
+  s.description      = "Toast Alert Hud Info"
 
   s.homepage         = 'https://github.com/manfengjun'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -20,12 +20,10 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_versions = '5.1'
   # s.source_files = 'JJEx/Classes/**/*'
   s.subspec 'Core' do |c|
-      c.dependency 'SwiftEntryKit'
-      c.dependency 'PopupDialog'
-      c.dependency 'NVActivityIndicatorView'
+      
       c.source_files = 'HHProgressHUD/Classes/Core/**/*'
   end
   s.subspec 'Toast' do |t|
@@ -43,4 +41,7 @@ Pod::Spec.new do |s|
    s.resource_bundles = {
      'HHProgressHUD' => ['HHProgressHUD/Assets/*{.xcassets}']
    }
+   s.dependency 'SwiftEntryKit'
+   s.dependency 'PopupDialog'
+   s.dependency 'NVActivityIndicatorView'
 end
