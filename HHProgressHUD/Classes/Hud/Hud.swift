@@ -20,8 +20,6 @@ public enum HUDType {
             return "error"
         case .info:
             return "info"
-        default:
-            return ""
         }
     }
 }
