@@ -17,7 +17,12 @@ class ViewController: UIViewController {
 
     @IBAction func click(_ sender: Any) {
         print("弹出")
-        HHProgressHUD.info("斯蒂芬斯蒂芬")
-        
+        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
+            
+        }) {
+            
+        }
+        HHProgressHUD.success("请求失败")
+
     }
 }

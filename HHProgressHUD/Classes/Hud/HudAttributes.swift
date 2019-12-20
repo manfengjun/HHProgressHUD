@@ -22,7 +22,7 @@ public struct HudStyles {
     public var displayDuration: TimeInterval
 
     public init(
-        font: UIFont = UIFont.boldSystemFont(ofSize: 18),
+        font: UIFont = UIFont.systemFont(ofSize: 18),
         color: UIColor = .white,
         alignment: NSTextAlignment = .center,
         numberOfLines: Int = 0,
@@ -47,6 +47,13 @@ extension EKAttributes {
         attributes.entryInteraction = .absorbTouches
         attributes.displayDuration = 3
         attributes.hapticFeedbackType = .none
+        attributes.popBehavior = .animated(
+            animation: .init(
+                fade: .init(
+                    from: 1.0, to: 0, duration: 0.01
+                )
+            )
+        )
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
         attributes.entranceAnimation = .init(
             scale: .init(

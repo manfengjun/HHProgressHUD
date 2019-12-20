@@ -59,20 +59,20 @@ extension HudView {
         NSLayoutConstraint.activate([
             icon.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             icon.centerXAnchor.constraint(equalTo: centerXAnchor),
-            icon.widthAnchor.constraint(equalToConstant: 40),
-            icon.heightAnchor.constraint(equalToConstant: 40)
+            icon.widthAnchor.constraint(equalToConstant: 25),
+            icon.heightAnchor.constraint(equalToConstant: 25)
         ])
         
         
-        let maxSize = CGSize(width: UIScreen.main.bounds.width - 160, height: 40)
+        let maxSize = CGSize(width: UIScreen.main.bounds.width - 160, height: 30)
         let width = label.hh_computeWidth(by: CGSize(width: maxSize.width, height: 20))
         let height = label.hh_computeHeight(by: maxSize)
 
         addSubview(label)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.topAnchor.constraint(equalTo: icon.bottomAnchor, constant: 15),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
+            label.topAnchor.constraint(equalTo: icon.bottomAnchor, constant: 10),
+            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             label.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
             label.rightAnchor.constraint(equalTo: rightAnchor, constant: -15),
             label.widthAnchor.constraint(equalToConstant: width),
