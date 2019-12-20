@@ -22,6 +22,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_versions = '5.1'
   s.source_files = 'HHProgressHUD/Classes/**/*'
+  s.resource_bundles = {
+    'HHProgressHUD' => ['HHProgressHUD/Assets/*{.xcassets}']
+  }
   s.dependency 'SwiftEntryKit'
   s.dependency 'PopupDialog'
   s.dependency 'NVActivityIndicatorView'

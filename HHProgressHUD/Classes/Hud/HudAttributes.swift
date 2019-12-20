@@ -46,7 +46,7 @@ extension EKAttributes {
         attributes.screenInteraction = .absorbTouches
         attributes.entryInteraction = .absorbTouches
         attributes.displayDuration = 3
-        attributes.hapticFeedbackType = .success
+        attributes.hapticFeedbackType = .none
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
         attributes.entranceAnimation = .init(
             scale: .init(

@@ -47,7 +47,7 @@ extension EKAttributes {
         attributes.positionConstraints.safeArea = .empty(fillSafeArea: false)
         attributes.windowLevel = .statusBar
         attributes.displayDuration = 3
-        attributes.hapticFeedbackType = .success
+        attributes.hapticFeedbackType = .none
         attributes.entryInteraction = .absorbTouches
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
         attributes.popBehavior = .animated(animation: .init(translate: .init(duration: 0.3), scale: .init(from: 1, to: 0.7, duration: 0.7)))
