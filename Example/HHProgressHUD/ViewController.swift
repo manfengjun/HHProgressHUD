@@ -17,12 +17,18 @@ class ViewController: UIViewController {
 
     @IBAction func click(_ sender: Any) {
         print("弹出")
-        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
-            
-        }) {
-            
+//        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
+//
+//        }) {
+//
+//        }
+        HHProgressHUD.show()
+        HHProgressHUD.toast("请求失败")
+        HHProgressHUD.toast("请求失败")
+        HHProgressHUD.toast("请求失败")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
         }
-        HHProgressHUD.success("请求失败")
 
     }
 }

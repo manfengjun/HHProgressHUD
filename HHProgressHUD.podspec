@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHProgressHUD'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'HHProgressHUD SDK'
   s.description      = "Toast Alert Hud Info"
 

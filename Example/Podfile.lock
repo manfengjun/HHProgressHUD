@@ -1,6 +1,6 @@
 PODS:
   - DynamicBlurView (4.0.0)
-  - HHProgressHUD (0.1.1):
+  - HHProgressHUD (0.1.2):
     - NVActivityIndicatorView
     - PopupDialog
     - SwiftEntryKit
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
-  HHProgressHUD: b22fb690433a4d10f198c52d4c1489a2388c5735
+  HHProgressHUD: 70a3e921162cab5f676be884b7d248fb8977905c
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a

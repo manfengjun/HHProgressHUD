@@ -50,17 +50,12 @@ extension EKAttributes {
         attributes.hapticFeedbackType = .none
         attributes.entryInteraction = .absorbTouches
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
-        attributes.popBehavior = .animated(
-            animation: .init(
-                fade: .init(
-                    from: 1.0, to: 0, duration: 0.01
-                )
-            )
-        )
+        attributes.popBehavior = .overridden
         attributes.shadow = .active(with: .init(color: EKColor(red: 50, green: 50, blue: 50), opacity: 0.5, radius: 5))
         attributes.statusBar = .dark
         attributes.roundCorners = .all(radius: 3)
         attributes.scroll = .disabled
+        attributes.precedence = .enqueue(priority: .normal)
         attributes.positionConstraints.maxSize = .init(width: .constant(value: min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)), height: .intrinsic)
         attributes.positionConstraints.verticalOffset = 80
         return attributes
