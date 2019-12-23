@@ -23,12 +23,16 @@ class ViewController: UIViewController {
 //
 //        }
         HHProgressHUD.show()
-        HHProgressHUD.toast("请求失败")
-        HHProgressHUD.toast("请求失败")
-        HHProgressHUD.toast("请求失败")
+        HHProgressHUD.show()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             HHProgressHUD.dismiss()
         }
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.toast("请求失败")
+            HHProgressHUD.toast("请求失败")
+        }
     }
 }

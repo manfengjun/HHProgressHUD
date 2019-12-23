@@ -27,7 +27,7 @@ public struct ToastStyles {
                 color: UIColor = .white,
                 alignment: NSTextAlignment = .center,
                 numberOfLines: Int = 0,
-                displayDuration: TimeInterval = 3,
+                displayDuration: TimeInterval = 1.5,
                 verticalOffset: CGFloat = 80) {
         self.font = font
         self.color = color
@@ -46,7 +46,7 @@ extension EKAttributes {
         attributes.positionConstraints = .float
         attributes.positionConstraints.safeArea = .empty(fillSafeArea: false)
         attributes.windowLevel = .statusBar
-        attributes.displayDuration = 3
+        attributes.displayDuration = 1.5
         attributes.hapticFeedbackType = .none
         attributes.entryInteraction = .absorbTouches
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))

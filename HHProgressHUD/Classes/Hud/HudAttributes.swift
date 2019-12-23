@@ -48,7 +48,7 @@ extension EKAttributes {
         attributes.displayDuration = 3
         attributes.hapticFeedbackType = .none
         attributes.popBehavior = .overridden
-        attributes.precedence = .enqueue(priority: .max)
+        attributes.precedence = .override(priority: .high, dropEnqueuedEntries: false)
         attributes.entryBackground = .color(color: EKColor(red: 50, green: 50, blue: 50))
         attributes.entranceAnimation = .init(
             scale: .init(
