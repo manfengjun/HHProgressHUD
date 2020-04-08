@@ -24,6 +24,23 @@ class ViewController: UIViewController {
 //        }
         HHProgressHUD.show()
         HHProgressHUD.show()
+        HHProgressHUD.show()
+        HHProgressHUD.show()
+        HHProgressHUD.show()
+        HHProgressHUD.show()
+        HHProgressHUD.show()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HHProgressHUD.dismiss()
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             HHProgressHUD.dismiss()
         }

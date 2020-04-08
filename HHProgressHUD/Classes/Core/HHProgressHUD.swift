@@ -61,16 +61,19 @@ public extension HHProgressHUD {
 // MARK: - HUD
 
 public extension HHProgressHUD {
-    static func success(_ message: String) {
-        Hud.success(message)
+    static func success(_ message: String,
+                        duration: TimeInterval? = nil) {
+        Hud.success(message, duration: duration)
     }
 
-    static func error(_ message: String) {
-        Hud.error(message)
+    static func error(_ message: String,
+                      duration: TimeInterval? = nil) {
+        Hud.error(message, duration: duration)
     }
 
-    static func info(_ message: String) {
-        Hud.info(message)
+    static func info(_ message: String,
+                     duration: TimeInterval? = nil) {
+        Hud.info(message, duration: duration)
     }
 
     static func show(_ message: String? = nil) {

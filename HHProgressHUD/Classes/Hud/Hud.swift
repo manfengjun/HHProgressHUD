@@ -23,15 +23,18 @@ public enum HUDType {
         }
     }
 }
+
 class Hud {
     public var styles: HudStyles = HudStyles()
 
     public static var shared: Hud = Hud()
     private init() {}
-    public static func deplay(_ message: String, hudType: HUDType) {
+    public static func deplay(_ message: String,
+                              duration: TimeInterval? = nil,
+                              hudType: HUDType) {
         let styles = Hud.shared.styles
         var attributes = EKAttributes.hh_hud
-        attributes.displayDuration = styles.displayDuration
+        attributes.displayDuration = duration == nil ? styles.displayDuration : duration!
         var labelStyle = EKProperty.LabelStyle.hh_hud
         labelStyle.color = EKColor(styles.color)
         labelStyle.font = styles.font
@@ -43,19 +46,29 @@ class Hud {
         SwiftEntryKit.display(entry: hud, using: attributes)
     }
 
-    static func success(_ message: String) {
-        deplay(message, hudType: .success)
+    static func success(_ message: String,
+                        duration: TimeInterval? = nil) {
+        deplay(message,
+               duration: duration,
+               hudType: .success)
     }
 
-    static func error(_ message: String) {
-        deplay(message, hudType: .error)
+    static func error(_ message: String,
+                      duration: TimeInterval? = nil) {
+        deplay(message,
+               duration: duration,
+               hudType: .error)
     }
 
-    static func info(_ message: String) {
-        deplay(message, hudType: .info)
+    static func info(_ message: String,
+                     duration: TimeInterval? = nil) {
+        deplay(message,
+               duration: duration,
+               hudType: .info)
     }
 }
- extension Hud {
+
+extension Hud {
     static func show(_ message: String? = nil) {
         var attributes = EKAttributes.hh_hud
         attributes.displayDuration = .infinity
