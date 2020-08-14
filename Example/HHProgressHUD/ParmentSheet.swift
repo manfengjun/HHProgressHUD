@@ -13,12 +13,22 @@ public class ParmentSheet: UIView {
     private var items: [UIButton] = []
     private var cancel: UIButton!
     private var titles: [String] = []
+    var cancelClosure: (() -> ())?
+    var clickClosure: ((UIButton) -> ())?
 
     init(with titles: [String]) {
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 0))
         self.titles = titles
         setup_subviews()
         setup_layout()
+    }
+
+    @objc func cancelAction() {
+        self.cancelClosure?()
+    }
+
+    @objc func clickAction(button: UIButton) {
+        self.clickClosure?(button)
     }
 
     required init?(coder: NSCoder) {
@@ -39,48 +49,44 @@ extension ParmentSheet {
         cancel.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         cancel.setTitleColor(UIColor(red: 0.39, green: 0.39, blue: 0.39, alpha: 1), for: .normal)
         cancel.translatesAutoresizingMaskIntoConstraints = false
+        cancel.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         self.cancel = cancel
-    
-        self.items = titles.map{
+
+        items = titles.map {
             let button = UIButton(type: .custom)
             button.setTitle($0, for: .normal)
             button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
             button.setTitleColor(UIColor(red: 0.39, green: 0.39, blue: 0.39, alpha: 1), for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
+            button.addTarget(self, action: #selector(clickAction(button:)), for: .touchUpInside)
             return button
         }
-        
-       
     }
 
     /// setup Layout
     func setup_layout() {
-        items.enumerated().forEach{
+        items.enumerated().forEach {
             addSubview($0.element)
             NSLayoutConstraint.activate([
                 $0.element.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat($0.offset * 60)),
                 $0.element.leftAnchor.constraint(equalTo: leftAnchor),
-                $0.element.rightAnchor.constraint(equalTo: leftAnchor),
+                $0.element.rightAnchor.constraint(equalTo: rightAnchor),
                 $0.element.heightAnchor.constraint(equalToConstant: 60)
             ])
         }
-        
-        
+
         addSubview(cancel)
         NSLayoutConstraint.activate([
             cancel.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat(items.count * 60)),
             cancel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-            cancel.rightAnchor.constraint(equalTo: leftAnchor, constant: 10),
+            cancel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
             cancel.heightAnchor.constraint(equalToConstant: 40),
-            cancel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 10)
+            cancel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
         cancel.layer.masksToBounds = true
         cancel.layer.cornerRadius = 20
-        
-        
     }
 
     /// update UI
     func update_layout() {}
 }
-

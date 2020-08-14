@@ -12,11 +12,17 @@ extension Position {
     var alert_attributes: EKAttributes {
         switch self {
         case .top:
-            return EKAttributes.hh_alert_top
+            var attributes = EKAttributes.topFloat.alert()
+            attributes.roundCorners = .bottom(radius: 10)
+            return attributes
         case .center:
-            return EKAttributes.hh_alert_center
+            var attributes = EKAttributes.centerFloat.alert()
+            attributes.roundCorners = .all(radius: 10)
+            return attributes
         case .bottom:
-            return EKAttributes.hh_alert_bottom
+            var attributes = EKAttributes.bottomFloat.alert()
+            attributes.roundCorners = .top(radius: 10)
+            return attributes
         }
     }
 }
@@ -26,7 +32,9 @@ class Alert {
 
     public static var shared: Alert = Alert()
     private init() {}
-
+    static func dismiss() {
+        SwiftEntryKit.dismiss()
+    }
     static func deplay(_ entry: UIView,
                        position: Position = .bottom,
                        verticalOffset: CGFloat? = nil) {

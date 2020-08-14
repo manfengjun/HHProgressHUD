@@ -19,7 +19,13 @@ class ViewController: UIViewController {
         print("弹出")
         let view = ParmentSheet(with: ["现金店","账期店"])
        
-        
+        view.cancelClosure = {
+            HHProgressHUD.dismiss()
+        }
+        view.clickClosure = { button in
+            HHProgressHUD.dismiss()
+            print(button.titleLabel?.text)
+        }
         HHProgressHUD.alert(view, position: .bottom)
 //        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
 //
