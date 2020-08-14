@@ -17,39 +17,16 @@ class ViewController: UIViewController {
 
     @IBAction func click(_ sender: Any) {
         print("弹出")
+        let view = ParmentSheet(with: ["现金店","账期店"])
+       
+        
+        HHProgressHUD.alert(view, position: .bottom)
 //        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
 //
 //        }) {
 //
 //        }
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        HHProgressHUD.show()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.dismiss()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            HHProgressHUD.toast("请求失败")
-            HHProgressHUD.toast("请求失败")
-        }
+        
     }
 }
+

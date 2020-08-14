@@ -99,4 +99,8 @@ public extension HHProgressHUD {
                       cancel: @escaping () -> Void) {
         Alert.popup(on: vc, title: title, content: content, sureTitle: sureTitle, cancelTitle: cancelTitle, sure: sure, cancel: cancel)
     }
+
+    static func alert(_ entry: UIView, position: Position) {
+        Alert.deplay(entry, position: position)
+    }
 }

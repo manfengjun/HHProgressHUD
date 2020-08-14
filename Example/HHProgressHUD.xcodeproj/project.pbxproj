@@ -12,6 +12,7 @@
 		8145F8542390B1E40084C363 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8512390B1E40084C363 /* README.md */; };
 		8145F8552390B1E40084C363 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8522390B1E40084C363 /* LICENSE */; };
 		8145F8562390B1E40084C363 /* HHProgressHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8145F8532390B1E40084C363 /* HHProgressHUD.podspec */; };
+		8163D8AF24E696E200AF2AA2 /* ParmentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8163D8AE24E696E200AF2AA2 /* ParmentSheet.swift */; };
 		817F10E62390B00900A7E45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E52390B00900A7E45C /* AppDelegate.swift */; };
 		817F10E82390B00900A7E45C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E72390B00900A7E45C /* SceneDelegate.swift */; };
 		817F10EA2390B00900A7E45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F10E92390B00900A7E45C /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		8145F8512390B1E40084C363 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8145F8522390B1E40084C363 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8145F8532390B1E40084C363 /* HHProgressHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HHProgressHUD.podspec; path = ../HHProgressHUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8163D8AE24E696E200AF2AA2 /* ParmentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmentSheet.swift; sourceTree = "<group>"; };
 		817F10E22390B00900A7E45C /* HHProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817F10E52390B00900A7E45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817F10E72390B00900A7E45C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				817F10EE2390B00A00A7E45C /* Assets.xcassets */,
 				817F10F02390B00A00A7E45C /* LaunchScreen.storyboard */,
 				817F10F32390B00A00A7E45C /* Info.plist */,
+				8163D8AE24E696E200AF2AA2 /* ParmentSheet.swift */,
 			);
 			path = HHProgressHUD;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817F10EA2390B00900A7E45C /* ViewController.swift in Sources */,
+				8163D8AF24E696E200AF2AA2 /* ParmentSheet.swift in Sources */,
 				817F10E62390B00900A7E45C /* AppDelegate.swift in Sources */,
 				817F10E82390B00900A7E45C /* SceneDelegate.swift in Sources */,
 			);

@@ -1,12 +1,12 @@
 PODS:
-  - DynamicBlurView (4.0.0)
-  - HHProgressHUD (0.1.3):
+  - DynamicBlurView (4.1.0)
+  - HHProgressHUD (0.1.5):
     - NVActivityIndicatorView
     - PopupDialog
     - SwiftEntryKit
-  - NVActivityIndicatorView (4.8.0):
-    - NVActivityIndicatorView/Presenter (= 4.8.0)
-  - NVActivityIndicatorView/Presenter (4.8.0)
+  - NVActivityIndicatorView (5.0.0):
+    - NVActivityIndicatorView/Base (= 5.0.0)
+  - NVActivityIndicatorView/Base (5.0.0)
   - PopupDialog (1.1.1):
     - DynamicBlurView (~> 4.0)
   - QuickLayout (3.0.0)
@@ -32,13 +32,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
-  HHProgressHUD: 90721e02d1fba34f362adf651d782d0a94a7f08f
-  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  HHProgressHUD: 1860fb375bafabdc34a98df4652e23cfa8e4f7c2
+  NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
   SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
 
 PODFILE CHECKSUM: dda07cad28bafdaf4690fe255543a65febefe28e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
