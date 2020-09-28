@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             HHProgressHUD.dismiss()
             print(button.titleLabel?.text)
         }
-        HHProgressHUD.alert(view, position: .bottom)
+        HHProgressHUD.alert(view, position: .center)
 //        HHProgressHUD.popup(on: self, title: "提示", content: "是否确认删除吗？", sureTitle: "确定", cancelTitle: "取消", sure: {
 //
 //        }) {

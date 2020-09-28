@@ -14,14 +14,20 @@ extension Position {
         case .top:
             var attributes = EKAttributes.topFloat.alert()
             attributes.roundCorners = .bottom(radius: 10)
+            attributes.positionConstraints = .fullWidth
+            attributes.positionConstraints.safeArea = .empty(fillSafeArea: true)
             return attributes
         case .center:
             var attributes = EKAttributes.centerFloat.alert()
             attributes.roundCorners = .all(radius: 10)
+            attributes.positionConstraints = .float
+            attributes.positionConstraints.safeArea = .empty(fillSafeArea: false)
             return attributes
         case .bottom:
             var attributes = EKAttributes.bottomFloat.alert()
             attributes.roundCorners = .top(radius: 10)
+            attributes.positionConstraints = .fullWidth
+            attributes.positionConstraints.safeArea = .empty(fillSafeArea: true)
             return attributes
         }
     }
@@ -49,9 +55,6 @@ class Alert {
         )
         attributes.entryBackground = .color(color: EKColor(red: 255, green: 255, blue: 255))
         attributes.screenBackground = .color(color: EKColor(red: 50, green: 50, blue: 50).with(alpha: 0.5))
-
-        attributes.positionConstraints = .fullWidth
-        attributes.positionConstraints.safeArea = .empty(fillSafeArea: true)
         SwiftEntryKit.display(entry: entry, using: attributes)
     }
 
